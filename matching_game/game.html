@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Find Pairs Memory Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section class="setting">
+            <h1 id="title" style="font-family: fantasy; font-size: 22pt; font-style:bold">Find Pairs Memory Game</h1>
+            <br>
+            <button id="startBtn" onclick="start()">START</button>
+            <br>
+            <br>
+            <br>
+            <h1 id="difficulty" style="font-family: fantasy; font-size: 18pt; font-style:bold">Difficulty:</h1>
+            <br>
+            <button id="easyBtn" onclick="easylvl()">LVL: Easy (60s)</button>
+            <br>
+            <br>
+            <button id="normalBtn" onclick="normallvl()">LVL: Normal (45s)</button>
+            <br>
+            <br>
+            <button id="hardBtn" onclick="hardlvl()">LVL: Hard (30s)</button>
+        </section>
+        <section class="memory-game" >
+            <div class="card" data-framework="lion">
+                <img class="frontside" src="img/lion.png" alt="Lion"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="lion">
+                <img class="frontside" src="img/lion.png" alt="Lion"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="gecko">
+                <img class="frontside" src="img/gecko.png" alt="Gecko"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="gecko">
+                <img class="frontside" src="img/gecko.png" alt="Gecko"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="horse">
+                <img class="frontside" src="img/horse.png" alt="Horse"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="horse">
+                <img class="frontside" src="img/horse.png" alt="Horse"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="turtle">
+                <img class="frontside" src="img/turtle.png" alt="Turtle"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="turtle">
+                <img class="frontside" src="img/turtle.png" alt="Turtle"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="elephant">
+                <img class="frontside" src="img/elephant.png" alt="Elephant"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="elephant">
+                <img class="frontside" src="img/elephant.png" alt="Elephant"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="wolf">
+                <img class="frontside" src="img/wolf.png" alt="Wolf"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+            <div class="card" data-framework="wolf">
+                <img class="frontside" src="img/wolf.png" alt="Wolf"/>
+                <img class="backside" src="img/zoo.png" alt="Zoo"/>
+            </div>
+        </section>
+        <section class="timer">
+            <h1 id="clock"style="font-family: fantasy; font-size: 22pt; font-style:bold">Time left:</h1>
+            <br>
+            <h1 id="count" style="font-size: 70pt; font-style:bold">60</h1>
+            <br>
+            <br>
+            <br>
+            <h1 id="instruction" style="font-family: fantasy; font-size: 25pt; font-style:bold">Click START to begin!</h1>
+        </section>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
